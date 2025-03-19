@@ -12,9 +12,4 @@ class NetmexBundle extends AbstractBundle
     {
         return __DIR__;
     }
-
-    public function loadExtension(array $config, ContainerConfigurator $container, ContainerBuilder $builder): void
-    {
-        $container->import('../config/services.yaml');
-    }
 }
