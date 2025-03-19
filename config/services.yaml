@@ -7,5 +7,7 @@ services:
             - { name: 'controller.argument_value_resolver' }
 
     Netmex\Bundle\EventListener\ValidationExceptionListener:
+        autowire: true
+        autoconfigure: true
         tags:
             - { name: 'kernel.event_listener', event: 'kernel.exception' }
