@@ -7,7 +7,6 @@ use Netmex\Bundle\Exception\InvalidJsonException;
 use Netmex\Bundle\Exception\NoDataException;
 use Netmex\Bundle\Exception\ValidationException;
 use Netmex\Bundle\Request\FormRequestInterface;
-use Netmex\Bundle\Request\TestRequest;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Controller\ValueResolverInterface;
 use Symfony\Component\HttpKernel\ControllerMetadata\ArgumentMetadata;
