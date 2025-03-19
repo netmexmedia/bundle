@@ -1,0 +1,23 @@
+{
+    "name": "netmex/bundle",
+    "type": "symfony-bundle",
+    "require": {
+        "symfony/framework-bundle": "^7.2"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Netmex\\Bundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Netmex\\Bundle\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Danny Verhoeven"
+        }
+    ]
+}
