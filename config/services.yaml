@@ -1,0 +1,11 @@
+services:
+    Netmex\Bundle\ArgumentResolver\RequestArgumentResolver:
+        arguments:
+            $validator: '@validator'
+            $serializer: '@serializer'
+        tags:
+            - { name: 'controller.argument_value_resolver' }
+
+    Netmex\Bundle\EventListener\ValidationExceptionListener:
+        tags:
+            - { name: 'kernel.event_listener', event: 'kernel.exception' }
