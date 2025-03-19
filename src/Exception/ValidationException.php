@@ -8,7 +8,7 @@ class ValidationException extends \RuntimeException
 {
     private $violations;
 
-    public function __construct($message = "Invalid Request", $code = 422, ConstraintViolationListInterface $violations)
+    public function __construct(ConstraintViolationListInterface $violations, $message = "Invalid Request", $code = 422)
     {
         $this->violations = $violations;
         parent::__construct($message, $code);

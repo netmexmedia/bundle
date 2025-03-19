@@ -89,7 +89,7 @@ class RequestArgumentResolver implements ValueResolverInterface
             $name = $error->getPropertyPath();
             $errorMsg = $error->getMessage();
 
-            throw new ValidationException("Invalid Request for $name: $errorMsg", 422 , $errors);
+            throw new ValidationException($errors, "Invalid Request for $name: $errorMsg", 422);
         }
 
         return $dto;
