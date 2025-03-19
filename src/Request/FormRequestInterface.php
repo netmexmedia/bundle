@@ -2,7 +2,6 @@
 
 namespace Netmex\Bundle\Request;
 
-abstract class AbstractRequest
+interface FormRequestInterface
 {
-    
 }
