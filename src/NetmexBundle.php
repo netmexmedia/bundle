@@ -8,8 +8,8 @@ use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
 
 class NetmexBundle extends AbstractBundle
 {
-    public function getPath(): string
+    public function loadExtension(array $config, ContainerConfigurator $container, ContainerBuilder $builder): void
     {
-        return __DIR__;
+        $container->import('../config/services.yaml');
     }
 }
